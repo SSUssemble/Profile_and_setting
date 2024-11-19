@@ -27,6 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         switchMode = findViewById(R.id.switchMode);
-
+        //imma changes something
     }
 }
