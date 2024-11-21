@@ -16,11 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     boolean nightMode;
 
-    SharedPreferences sharedPreferences;
-
-    SharedPreferences.Editor editor;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
