@@ -31,10 +31,12 @@ public class appsetting extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.activity_list_item, listviewItem);
         listview.setAdapter(adapter);
 
-        listview.setOnItemClickListener((AdapterView<?> parent, View view, int position, long id) -> {
-            if (position == 0) {
-                
-                }
-            });
-        }
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(appsetting.this, darkmodeactivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 }
