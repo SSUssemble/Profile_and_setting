@@ -28,8 +28,9 @@ public class appsetting extends AppCompatActivity {
 
         String[] listviewItem = {"다크모드 설정"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.activity_list_item, listviewItem);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listviewItem);
         listview.setAdapter(adapter);
+
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
